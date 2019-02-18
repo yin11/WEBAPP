@@ -1,0 +1,44 @@
+.main-box{
+	position: fixed;
+	width: 100%;
+	padding: 0 32px;
+	box-sizing: border-box;
+	height: 100%;
+	
+	.btn-solid-big{
+		width: 100%;
+		margin: 50px 0 14px;
+	}
+	
+	.logo{
+		display: block;
+		margin: 62px auto 50px;
+	}
+	
+	.tip-box{
+		background: $warm-color;
+		text-align: center;
+		position: absolute;
+		width: 100%;
+		left: 0;
+		height: 20px;
+		line-height: 20px;
+	}
+	
+	.code-box{
+		overflow: hidden;
+		height: 40px;
+		border-radius: 40px;
+		margin-bottom: 10px;
+		
+		.btn-code{
+			background: $main-color;
+			position: absolute;
+			right: 0;
+			top: 0;
+			width: 104px;
+			height: 40px;
+			line-height: 40px;
+		}
+	}
+}

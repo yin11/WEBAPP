@@ -1,0 +1,30 @@
+.main-box{
+	padding: 0 15px;
+	
+	.border-box{
+		border: 1px solid $gray-c;
+		border-radius: 5px;
+		padding: 10px;
+		box-sizing: border-box;
+		
+		h3{
+			margin: 8px 0 20px;
+		}
+		
+		p{
+			text-indent: 2em;
+		}
+	}
+	
+	.hilite-box{
+		margin: 20px 0 10px;
+		text-align: center;
+		img{
+			width: 100px;
+			
+			&:last-of-type{
+				transform: rotate(180deg);
+			}
+		}
+	}
+}

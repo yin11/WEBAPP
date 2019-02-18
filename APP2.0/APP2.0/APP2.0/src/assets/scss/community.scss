@@ -1,0 +1,57 @@
+.community{
+	padding: 25px 15px 20px 75px;
+	position: relative;
+	
+	span.fc-green{
+		border: 1px solid $main-color;
+		padding: 0 5px;
+		border-radius: 5px;
+	}
+	
+	.img-box{
+		position: absolute;
+		width: 50px;
+		height: 50px;
+		border-radius: 50%;
+		overflow: hidden;
+		top: 15px;
+		left: 20px;
+		background: #ccc;
+	}
+	
+	.con-p{
+		margin-top: 10px;
+	}
+	
+	.img-list{
+		.fl-l{
+			width: 115px;
+			height: 115px;
+			overflow: hidden;
+			margin: 10px 22px 0 0;
+			background: #ccc;
+			
+		}
+	}
+	
+	.ico-nooice{
+		padding-left: 24px;
+		background: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAmCAMAAACBKikvAAAAFVBMVEVHcEyZmZmampqZmZmZmZmampqZmZkmNBVZAAAAB3RSTlMA/iOC5VK+sLAKQwAAAPlJREFUOMutlNEWhCAIRBGE///kFbQURe1h5/QSXAdEC+ARMjPCICQihknIOakyvVQJ6EN+saRH2Uzauh6oYosIiaWp2BkhRC0wcrWEZUS6kVk3ErUVfHurBcl1VRfJwKmp41q+Fc5uZ+Q5gFwDMscB0b+zWWIphHCUbgIVF7hIdDtLR4GM+TNY7gA/h3LrEds4T7Jdw308dY7BwIPKFB3hMu+nZr5YviX53CX1tJyK83Dp3M0NGpTN23xxRg/ekOqw3OqAjHqKyNUvJpWL5mbk1Hc8C0/uOV+d0ukUevbM9XpzvxuSJd2/YUzTT+r4W/jCVZLhizD8fH82egP6JREz7QAAAABJRU5ErkJggg==) no-repeat left center;
+		background-size: auto 18px;
+		margin-left: 5px;
+		
+		&.active{
+			color: $main-color;
+			background: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAmCAMAAACBKikvAAAAG1BMVEVHcEwtlowslowqlYwtl4wtlowtlo0tlowtloyfo6lcAAAACHRSTlMAbs4XS+8uiwqKSmoAAADJSURBVDjLxZTbFoUgCEQBRfn/Lz5mZV4o5+3MW7N2zBIFolshcgzUKTFzpFksdkj4YkPWamgefz6xitYirM3Qrmp87KJcyvXfxo2zUSJqHpkm23Q27EyXxV8kwQl2xVjBUrKABilhycdxGAP5f2CkhIGl40gbax8FATN6hfX1CpaMlNRrHAR5O3WQBAneh0s3hV+kpmGsQe6dnDmiDHI+6XFeurjcSr5xM/nODUts6POq1nn95p4NmGmnc7ftufKW9F5zW5K94/4AZFsfHyZCqqoAAAAASUVORK5CYII=) no-repeat left center;
+			background-size: auto 18px;
+		}
+	}
+	
+	.ico-comment{
+		padding-left: 24px;
+		background: url(data:image/gif;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAmCAMAAACBKikvAAAAFVBMVEVHcEyZmZmZmZmZmZmampqampqZmZlwCBeOAAAABnRSTlMASuerGHFHeVWKAAAAtUlEQVQ4y+2UyxLDIAhFeVz8/08uUiVD0g6uuupd6hmCOQoRVEYTURBxi0VAesQNJS/I1IT96+Q0tZnQHzwCYfu/g9MAG+4gZMjad1e2jYjgBrqltY0wG9Htt1YcHyqOR0VfRXaWPYLxV3gMouOmrOlBdMfK28vlyYTkOhJW6oN3WVZGhWyyDBqx5XbFLnLW09x4nMLJ9w2Mzpvh4TUh11X7Ss5aMloux6D1FoJkOoh3eMT9LC+l0glOq9q71AAAAABJRU5ErkJggg==) no-repeat left center;
+		background-size: auto 18px;
+		margin-left: 5px;
+	}
+}
+

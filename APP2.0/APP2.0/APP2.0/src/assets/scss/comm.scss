@@ -1,0 +1,657 @@
+/* 主题颜色 */
+$main-color:#2D968C;
+$warm-color:#EF6437;
+/* 背景色 */
+$bg-color:#fff;
+/* 线的颜色 */
+$line-color:#eee;
+/* 灰色 */
+$gray-f9:#f9f9f9;
+$gray-c:#ccc;
+$gray-9:#999;
+
+/* 字体大小 */
+$font-size:20px;
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+[contenteditable = "true"], input, textarea {
+    -webkit-user-select: auto !important;
+    -khtml-user-select: auto!important;
+    -moz-user-select: auto!important;
+    -ms-user-select: auto!important;
+    -o-user-select: auto!important;
+    user-select: auto!important;
+}
+ul,li{
+	list-style: none;
+}
+button,input{
+	background: transparent;
+	border: none;
+	outline: none;
+}
+html{
+	color: #333;
+	font-family: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;
+	-webkit-touch-callout: none;/*禁止长按链接或长按图片后弹出菜单*/
+    -webkit-tap-highlight-color:rgba(0,0,0,0);/*安卓H5页面touch时没有蓝色的边框与遮罩*/
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+body::-webkit-scrollbar {display:none}/*隐藏滚动条同时又能 滚动*/
+a{
+	text-decoration: none;
+}
+i{
+	font-style: normal;
+}
+body {
+	width: 100%;
+	/*height: 100%;*/
+	background: $gray-f9;
+    margin: 0 auto;
+    padding: 0;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+    touch-callout: none;
+    -webkit-tap-highlight-color: transparent!important;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+     -webkit-overflow-scrolling: touch;
+	 line-height: 1.5;
+}
+#app{
+	min-height: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+textarea{
+	border: none;
+	outline: none;
+}
+
+/* 段落两端对齐 */
+.p-paragraph{
+	text-align: justify!important;
+  text-justify: inter-ideograph!important;
+}
+
+
+
+/* 路由的国度动画 */
+.transition-right-enter-active,
+.transition-right-leave-active,
+.transition-left-enter-active,
+.transition-left-leave-active {
+  will-change: transform;
+  transition: all 500ms;
+  position: absolute;
+  
+  .swiper-slide,.swiper-slide-active{
+	  width: 100%;
+  }
+}
+.transition-right-enter {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+.transition-right-leave-active {
+  opacity: 0;
+  transform: translate3d(100%, 0, 0);
+}
+.transition-left-enter {
+  opacity: 0;
+  transform: translate3d(100%, 0, 0);
+}
+.transition-left-leave-active {
+  opacity: 0;
+  transform: translate3d(-100%, 0, 0);
+}
+
+
+/**浮动**/
+.fl-l{
+	float: left;
+}
+.fl-r{
+	float: right;
+}
+.clearfix{
+    zoom: 1;
+}
+.clearfix:after{
+    content: "";
+    display:block;
+    height: 0;
+    clear: both;
+    overflow: hidden;
+}
+
+/* 图标 */
+.icon{
+	display: block;
+}
+
+/* 文本向右对其 */
+.txt-r{
+	text-align: right;
+}
+
+/*背景色*/
+.bg-f{
+	background: #fff;
+}
+
+/**字体大小**/
+.fz36{
+	font-size: 36px;
+}
+.fz30{
+	font-size: 30px;
+}
+.fz26{
+	font-size: 26px;
+}
+.fz24{
+	font-size: 24px;
+}
+.fz18{
+	font-size: 18px;
+}
+.fz16{
+	font-size: 16px;
+}
+.fz14{
+	font-size: 14px;
+}
+.fz13{
+	font-size: 13px;
+}
+.fz12{
+	font-size: 12px;
+}
+.fz11{
+	font-size: 11px;
+}
+.fz10{
+	font-size: 10px;
+}
+.fz9{
+	font-size: 9px;
+}
+
+/*字体加粗*/
+.fw-6{
+	font-weight: 600;
+}
+
+/**字体颜色**/
+.fc-f{
+	color: $bg-color;
+}
+.fc-9{
+	color: #999;
+}
+.fc-3{
+	color: #333;
+}
+.fc-green{
+	color: $main-color;
+}
+.fc-orange{
+	color: $warm-color;
+}
+
+/* 头部标题栏 */
+header{
+	position: fixed;
+	width: 100%;
+    z-index: 6;
+	
+	h1{
+		text-align: center;
+		line-height: 44px;
+	}
+	
+	.ico-retrun{
+		display: block;
+		position: absolute;
+		bottom: 0;
+		left: 16px;
+		line-height: 45px;
+		height: 45px;
+		min-width: 10px;
+		z-index: 2;
+	}
+}
+/* 头部标题栏右边的按钮内容 */
+.head-btn-box{
+	position: fixed;
+	right: 0;
+	top: 0;
+	height: 44px;
+	z-index: 6;
+}
+
+/* 左箭头 */
+.left-arrow {
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border-top: 2px solid;
+	border-left: 2px solid;
+	transform: rotate(-45deg);
+	-webkit-transform: rotate(-45deg);
+	vertical-align: middle;
+}
+/*右边箭头*/
+.right-arrow{
+	display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-top: 1px solid;
+    border-right: 1px solid;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    vertical-align: middle;
+}
+
+
+/*遮罩层*/
+.mask{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 7;
+}
+
+/*flex布局*/
+.flex-box{
+	display: flex;
+}
+.flex-box>.item{
+	flex: 1;
+	text-align: center;
+}
+
+/*相对定位*/
+.relative{
+	position: relative;
+}
+
+/*多行溢出隐藏文本*/
+.txt-hide{
+	overflow : hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 2;
+	-webkit-box-orient: vertical;
+}
+/*单行文本溢出隐藏*/
+.p-hide{
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+}
+
+/*上划线*/
+.border-top{
+	position: relative;
+}
+.border-top:after{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: $line-color;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+/**下划线**/
+.border-buttom{
+	position: relative;
+}
+.border-buttom:before{
+	content: '';
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: $line-color;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 1;
+}
+/*右边线*/
+.border-right{
+	position: relative;
+}
+.border-right:after{
+	content: '';
+	display: block;
+	width: 1px;
+	height: 100%;
+	background: #e5e5e5;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 1;
+}
+/*左边线*/
+.border-left{
+	position: relative;
+}
+.border-left:before{
+	content: '';
+	display: block;
+	width: 1px;
+	height: 100%;
+	background: #e5e5e5;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+
+/* 按钮 */
+.btn-empty{
+	border: 1px solid $main-color;
+	color: $main-color;
+}
+.btn-empty-big{
+	border: 1px solid $main-color;
+	color: $main-color;
+	background: #fff;
+	line-height: 40px;
+	border-radius: 40px;
+	display: block;
+}
+.btn-solid{
+	background: $main-color;
+	color: #fff;
+}
+.btn-solid-big{
+	background: $main-color;
+	color: #fff;
+	line-height: 40px;
+	border-radius: 40px;
+	display: block;
+}
+.tbn-disabled{
+	background: $gray-c !important;
+}
+
+
+/* table列表 */
+.table-view{
+	padding: 0 15px;
+	line-height: 40px;
+	
+	.fl-r{
+		display: inline-block;
+		height: 40px;
+		
+		.right-arrow{
+			width: 6px;
+			height: 6px;
+			border-color: $gray-9;
+		}
+	}
+}
+
+/* 订单列表 */
+.table-list{
+	padding: 0 15px;
+	&>.item{
+		padding: 10px 0 10px 110px;
+		position: relative;
+		height: 100px;
+		
+		.img-box{
+			position: absolute;
+			top: 10px;
+			left: 0;
+			width: 100px;
+			height: 100px;
+			overflow: hidden;
+			border-radius: 10px;
+			img{
+				border-radius: 10px;
+			}
+		}
+	}
+}
+
+
+/* 底部粗边距 */
+.mb-10{
+	border-bottom: 10px solid $gray-f9;
+}
+
+/* 小标题背景 */
+.title-bg{
+	padding: 0 20px 0 4px;
+    line-height: 30px;
+    background: #c5dedb;
+    border-left: 2px solid #2D968C;
+    position: relative;
+	
+	&:after{
+		content: "";
+		border-style: solid;
+		border-color: transparent;
+		border-width: 5px 10px 5px 10px;
+		border-right-color: #fff;
+		width: 0;
+		height: 0;
+		position: absolute;
+		right: 0;
+		top: 5px;
+	}
+}
+
+
+/*单选项*/
+input[type="radio"]{
+	opacity: .3;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+input[type="radio"]+label{
+	display: block;
+}
+/* 多选 */
+input[type="checkbox"]{
+	opacity: .3;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0;
+	top: 0;
+	z-index: 1;
+}
+input[type="checkbox"]+label{
+	display: block;
+}
+
+/* 页面最底部的按钮 */
+.bottom-box{
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	line-height: 40px;
+	z-index: 2;
+	text-align: center;
+}
+.bottom-placeholder{
+	height: 44px;
+}
+
+
+/* 优惠券 */
+.coupon-box {
+	margin: 0 24px 10px;
+	border: 1px solid $main-color;
+	position: relative;
+	display: flex;
+	border-radius: 5px;
+	
+	&:after,&:before{
+		content: "";
+		display: block;
+		width: 8px;
+		height: 8px;
+		border: 1px solid $main-color;
+		border-radius: 50%;
+		position: absolute;
+		background: #fff;
+		right: 90px;
+		border-top-color: transparent;
+		border-right-color: transparent;
+	}
+	&:after{
+		top: -5px;
+		transform: rotate(-45deg);
+	}
+	&:before{
+		bottom: -5px;
+		transform: rotate(135deg);
+	}
+	&.used{
+		filter: grayscale(100%);
+	}
+	
+	.coupon-l{
+		width: 230px;
+		display: flex;
+		padding: 3px 0;
+		
+		.num{
+			width: 62px;
+			padding: 0 10px 0 5px;
+		}
+		.tip{
+			width: 140px;
+		}
+	}
+	
+	.coupon-r{
+		padding: 3px 0;
+		display: flex;
+		color: #fff;
+		background: $main-color;
+		width: 96px;
+		justify-content: center;
+		align-items: center;
+	}
+}
+
+/* 输入框公共样式 */
+.input-box{
+	font-size: 13px;
+	height: 40px;
+	padding: 10px 12px;
+	box-sizing: border-box;
+	border-radius: 40px;
+	width: 100%;
+	background: #eee;
+	margin-bottom: 10px;
+	
+}
+
+
+/*toast提示语*/
+.common-toast {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: 11000;
+  width: auto;
+  padding: 0 8px;
+  line-height: 34px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 14px;
+  color: white;
+  background: rgba(0, 0, 0, 0.7);
+  display: none;
+  z-index: 99;
+}
+
+.common-toast-show {
+  -webkit-animation: commonToastShow ease 300ms;
+  animation: commonToastShow ease 300ms;
+}
+
+.common-toast-hide {
+  -webkit-animation: commonToastHide ease 500ms;
+  animation: commonToastHide ease 500ms;
+}
+
+@keyframes commonToastShow {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0) scale(0);
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+  100% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+}
+
+
+@keyframes commonToastHide {
+  0% {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0) scale(1);
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0) scale(0);
+    transform: translate3d(0, 0, 0) scale(0);
+  }
+}
+
+
+
+/* 选中的div的下划线横向滑动的tab */
+.move-tab{
+	line-height: 36px;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	top: 44px;
+	z-index: 2;
+	.move-line{
+		height: 2px;
+    border-top: 4px solid $main-color;/*只需要将上边显示出来*/
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    transition: left .2s ease-in-out 0s;/*包含四个过度属性：执行变换属性、执行时间、速率、延迟*/
+	}
+}
